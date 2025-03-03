@@ -1,0 +1,39 @@
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a fixed height */
+    margin-top: 20px; /* Push the map further down */
+}
+
+body {
+    background-color: black;
+    color: white; /* Default text color */
+}
+
+#my-map {
+    width: 100%;
+    height: 500px;
+    margin: 50px auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+} 
+
+/* Style the toggle button */
+#toggle-subway {
+    position: absolute;
+    top: 1250px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#toggle-subway:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+

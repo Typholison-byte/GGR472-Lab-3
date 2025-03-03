@@ -1,0 +1,134 @@
+<html>
+
+
+<body>
+	<!-- Navigation bar using Bootstrap -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand">GGR472 Lab 2</a>
+			<!-- Set navbar toggler for small screens -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<!-- Links in nav bar -->
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="credits.html">Credits</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Container for main content - Centre all text inside container and set background to black and text to white -->
+	<div class="container text-center p-3 mb-2 bg-black text-white">
+		<!-- Heading section -->
+		<div class="row">
+
+			<h1 style="color:rgb(13, 146, 163);"> Eric's GGR472 linkpage</h1>
+			<h2 style="color:rgb(105, 7, 129);"> Forms of transportation around Toronto</h2>
+
+			<br><br><br>
+			<p>Want to check out the official website of Toronto:
+				<a href="https://www.toronto.ca/">City of Toronto</a>
+			</p>
+			
+			<!-- Image section - Display gif stored in Data folder in row
+                Use Bootstrap grid system to set image to a width of four columns on medium screen and larger
+                Use mx-auto to centre and img-fluid to adjust sizing-->
+			<div class="row">
+				<div class="col-md-4 mx-auto">
+					<img src="subway.gif" class="img-fluid" alt="subway station">
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- My legend of the web map-->
+		<br><br>
+		<div align=left>
+			<p>This map below shows the different forms of transportation around Toronto. Here's a legend of what each
+				feature shows:</p>
+			<br>
+			<p style="color:red">Red Points: GO Train Stations</p>
+			<p style="color:orange">Orange Polygons: Airports</p>
+			<p style="color:purple">Purple Lines: Subway Lines from TTC</p>
+			<p style="color:pink">Pink Area: Toronto</p>
+		</div>
+
+		<br>
+		<!-- Embedded map -->
+		<div class="map-container">
+			<iframe width="100%" height="500px"
+				src="script.js"
+				title="GGR472 Lab 2" style="border:none;">
+			</iframe>
+
+		<br><br>
+		<div align = "left">
+
+			<!-- Link to Mapbox for-->
+			<p style="color:lightgreen">Check out this map on
+				<a href ="https://api.mapbox.com/styles/v1/lakeerie/cm6y4o0cg00jc01s1hx2fg145.html?title=view&access_token=pk.eyJ1IjoibGFrZWVyaWUiLCJhIjoiY201cG5nbmptMDM0eDJxb215YXB0OGV0ZSJ9.yGNd3OQ2HqXdTSTuJcD9ug&zoomwheel=true&fresh=true#9.1/43.7277/-79.3049">
+					Mapbox
+				</a>
+			</p>
+		</div>
+			<!-- Javascript script file -->
+			<script src="script.js"></script>
+			<!-- Bootstrap JavaScript -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+				crossorigin="anonymous"></script>
+
+
+			<br><br>
+			<p>Was this map helpful?</p>
+			<!-- Voting buttons section -->
+			<div class="row">
+				<div class="col">
+					<button type="button" class="btn btn-primary" id="btn-yes">Yes</button>
+					<button type="button" class="btn btn-primary" id="btn-no">No</button>
+				</div>
+			</div>
+
+			<br>
+			<div class="row">
+				<p style="color:lightgreen">Yes it was!:
+					<!-- Display count for yes votes -->
+					<span id="count-yes">0</span>
+				</p>
+				<p style="color:red">No it wasn't:
+					<!-- Display count for no votes -->
+					<span id="count-no">0</span>
+				</p>
+			</div>
+        </body>
+
+
+
+For <style class="css">
+	body {
+    background-color: aqua;
+    color: blue;
+    margin: 20px; 
+    padding: 20px; 
+    
+}
+
+.text-left-margin {
+    margin-left: 10px;
+}
+
+h1 {
+    color: purple;
+}
+</style>

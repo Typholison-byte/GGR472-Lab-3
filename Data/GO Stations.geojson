@@ -1,0 +1,537 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Exhibition GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.41875619771061,
+                    43.635968212625556
+                ],
+                "type": "Point"
+            },
+            "id": 0
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Toronto Union GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38035505969744,
+                    43.64447674836438
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Danforth GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.30022332662,
+                    43.68637010995843
+                ],
+                "type": "Point"
+            },
+            "id": 2
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Scarborough GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.25466793185983,
+                    43.71694565878684
+                ],
+                "type": "Point"
+            },
+            "id": 3
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kennedy GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.26267911869051,
+                    43.73269540564624
+                ],
+                "type": "Point"
+            },
+            "id": 4
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eglinton Go Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.23207258944052,
+                    43.7396008441236
+                ],
+                "type": "Point"
+            },
+            "id": 5
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Weston GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.5126792382137,
+                    43.70005900038663
+                ],
+                "type": "Point"
+            },
+            "id": 6
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Etobicoke North GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.56317759959767,
+                    43.70641380953214
+                ],
+                "type": "Point"
+            },
+            "id": 7
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Downsview Park Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.47824023465358,
+                    43.75339670961796
+                ],
+                "type": "Point"
+            },
+            "id": 8
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kipling GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.53710102866292,
+                    43.63567803947248
+                ],
+                "type": "Point"
+            },
+            "id": 9
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dixie GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.57761431667106,
+                    43.60760928864789
+                ],
+                "type": "Point"
+            },
+            "id": 10
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Long Branch GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.54562377345658,
+                    43.59187908041844
+                ],
+                "type": "Point"
+            },
+            "id": 11
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mimico GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.4967690331341,
+                    43.61674046859247
+                ],
+                "type": "Point"
+            },
+            "id": 12
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Malton GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.63799630481586,
+                    43.70478747531109
+                ],
+                "type": "Point"
+            },
+            "id": 13
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Old Cummer GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37116612149845,
+                    43.79227899621529
+                ],
+                "type": "Point"
+            },
+            "id": 14
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Langstaff GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.42330439827793,
+                    43.83828336837519
+                ],
+                "type": "Point"
+            },
+            "id": 15
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Richmond Hill GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.42651179349741,
+                    43.874727743066956
+                ],
+                "type": "Point"
+            },
+            "id": 16
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Maple GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.5068706090141,
+                    43.859496376496224
+                ],
+                "type": "Point"
+            },
+            "id": 17
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rutherford GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.49818431698432,
+                    43.83804627357287
+                ],
+                "type": "Point"
+            },
+            "id": 18
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oriole GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.36418165939344,
+                    43.764918636907055
+                ],
+                "type": "Point"
+            },
+            "id": 19
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Unionville GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.31431027252717,
+                    43.85169091486097
+                ],
+                "type": "Point"
+            },
+            "id": 20
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Miliken GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.30162270621888,
+                    43.8232019057678
+                ],
+                "type": "Point"
+            },
+            "id": 21
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Agincourt GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.28438383402188,
+                    43.78597030536045
+                ],
+                "type": "Point"
+            },
+            "id": 22
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Markham GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.26240647851343,
+                    43.88263435181267
+                ],
+                "type": "Point"
+            },
+            "id": 23
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Centennial GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.28886130943609,
+                    43.87386657309807
+                ],
+                "type": "Point"
+            },
+            "id": 24
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Guildwood GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.19771461651176,
+                    43.75492767575864
+                ],
+                "type": "Point"
+            },
+            "id": 25
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rouge Hill GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.13050092755579,
+                    43.78020123212687
+                ],
+                "type": "Point"
+            },
+            "id": 26
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pickering GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.08440899518828,
+                    43.831520397095545
+                ],
+                "type": "Point"
+            },
+            "id": 27
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ajax GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.04136971069487,
+                    43.84758842434252
+                ],
+                "type": "Point"
+            },
+            "id": 28
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stouffville GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.25006594216575,
+                    43.97087519086824
+                ],
+                "type": "Point"
+            },
+            "id": 29
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "King City GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.5270310317734,
+                    43.92016781015218
+                ],
+                "type": "Point"
+            },
+            "id": 30
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bramalea GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.69183762804057,
+                    43.70134051039469
+                ],
+                "type": "Point"
+            },
+            "id": 31
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Brampton Innovation District GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.76446748508091,
+                    43.68678199264281
+                ],
+                "type": "Point"
+            },
+            "id": 32
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mount Pleasant GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.8225684013343,
+                    43.675071633191294
+                ],
+                "type": "Point"
+            },
+            "id": 33
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Georgetown GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.91912120403795,
+                    43.65538650991243
+                ],
+                "type": "Point"
+            },
+            "id": 34
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cooksville GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.62438084566661,
+                    43.583149407153854
+                ],
+                "type": "Point"
+            },
+            "id": 35
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Erindale GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.66913173568295,
+                    43.567133692571474
+                ],
+                "type": "Point"
+            },
+            "id": 36
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Port Credit GO Station"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.58691942634215,
+                    43.5560117987535
+                ],
+                "type": "Point"
+            },
+            "id": 37
+        }
+    ]
+}
