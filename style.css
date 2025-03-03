@@ -5,9 +5,19 @@
     margin-top: 20px; /* Push the map further down */
 }
 
+h1 {
+    color: turquoise;
+}
+
+h2
+{
+    color: purple;
+}
+
+
 body {
     background-color: black;
-    color: white; /* Default text color */
+    color: green; /* Default text color */
 }
 
 #my-map {
@@ -22,7 +32,7 @@ body {
 /* Style the toggle button */
 #toggle-subway {
     position: absolute;
-    top: 1250px;
+    top: 1200px;
     left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border: none;

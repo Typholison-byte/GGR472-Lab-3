@@ -19,8 +19,7 @@ map.on('load', () => {
     // Add a data source from a GeoJSON file 
     map.addSource('GO-Stations', {
         type: 'geojson',
-        url: 'mapbox://lakeerie.3hw6tqvt', // Update to your mapbox tileset ID
-        data: 'https://raw.githubusercontent.com/Typholison-byte/GGR472-Lab-2-Attempt--2/refs/heads/main/Data/GO%20Stations.geojson' // Your URL to your buildings.geojson file 
+        data: 'https://raw.githubusercontent.com/Typholison-byte/GGR472-Lab-3/refs/heads/main/Data/GO%20Stations.geojson' // Your URL to your buildings.geojson file 
     });
 
     // Add the layer to display the stations
@@ -36,34 +35,13 @@ map.on('load', () => {
         }
     });
 
-    // New test
-
+    // Pop-ups for GO Stations
     map.on('click', 'GO-Stations-layer', (e) => {
-        if (e.features.length > 0) {
-            const stationName = e.features[0].properties.name || "Unknown Station"; // Ensure a fallback value
-            new mapboxgl.Popup()
-                .setLngLat(e.lngLat)
-                .setHTML(`<b>Station:</b> ${stationName}`)
-                .addTo(map);
-        }
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(`<b>Station:</b> ${e.features[0].properties.name}`)
+            .addTo(map);
     });
-
-
-    // // Pop-ups for GO Stations
-    // map.on('click', 'GO-Stations-layer', (e) => {
-    //     new mapboxgl.Popup()
-    //         .setLngLat(e.lngLat)
-    //         .setHTML(`<b>Station:</b> ${e.features[0].properties.name}`)
-    //         .addTo(map);
-    // });
-
-    // map.on('click', 'GO-Stations-layer', (e) => {
-    //     console.log(e.features[0].properties); // Check all properties
-    //     new mapboxgl.Popup()
-    //         .setLngLat(e.lngLat)
-    //         .setHTML(`<b>Properties:</b> ${JSON.stringify(e.features[0].properties.name)}`)
-    //         .addTo(map);
-    // });
 
     // Add a data source from a GeoJSON file
     map.addSource('GGR472_Subway_Lines', {

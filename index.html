@@ -2,91 +2,98 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GGR472 Lab 3: A look at transportation in Toronto</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GGR472 Lab 3: A look at transportation in Toronto</title>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation bar using Bootstrap -->
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container-fluid">
-			<a class="navbar-brand">GGR472 Lab 2</a>
-			<!-- Set navbar toggler for small screens -->
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+	<div align='center'>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<!-- Links in nav bar -->
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="credits.html">Credits</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+		<!-- Navigation bar using Bootstrap -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand">GGR472 Lab 2</a>
+				<!-- Set navbar toggler for small screens -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-	<!-- Container for main content - Centre all text inside container and set background to black and text to white -->
-	<div class="container text-center p-3 mb-2 bg-black text-white">
-		<!-- Heading section -->
-		<div class="row">
-
-			<h1 style="color:rgb(13, 146, 163);"> Eric's GGR472 linkpage</h1>
-			<h2 style="color:rgb(105, 7, 129);"> Forms of transportation around Toronto</h2>
-
-			<br><br><br>
-			<p>Want to check out the official website of Toronto:
-				<a href="https://www.toronto.ca/">City of Toronto</a>
-			</p>
-			
-			<!-- Image section - Display gif stored in Data folder in row
-                Use Bootstrap grid system to set image to a width of four columns on medium screen and larger
-                Use mx-auto to centre and img-fluid to adjust sizing-->
-			<div class="row">
-				<div class="col-md-4 mx-auto">
-					<img src="subway.gif" class="img-fluid" alt="subway station">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<!-- Links in nav bar -->
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="credits.html">Credits</a>
+						</li>
+					</ul>
 				</div>
 			</div>
+		</nav>
+
+		<!-- Container for main content - Centre all text inside container and set background to black and text to white -->
+		<div class="container text-center p-3 mb-2 bg-black text-white">
+			<!-- Heading section -->
+			<div class="row">
+
+				<h1> Eric's GGR472 linkpage</h1>
+				<h2> Forms of transportation around Toronto</h2>
+
+				<p>Want to check out the official website of Toronto:
+					<a href="https://www.toronto.ca/">City of Toronto</a>
+				</p>
+
+				<!-- Image section - Display gif stored in Data folder in row
+                Use Bootstrap grid system to set image to a width of four columns on medium screen and larger
+                Use mx-auto to centre and img-fluid to adjust sizing-->
+				<div class="row">
+					<div class="col-md-4 mx-auto">
+						<img src="subway.gif" class="img-fluid" alt="subway station">
+					</div>
+				</div>
 
 
+			</div>
 		</div>
 
-		<!-- My legend of the web map-->
-		<br><br>
-		<div align=left>
-			<p>This map below shows the different forms of transportation around Toronto. Here's a legend of what each
-				feature shows:</p>
-			<br>
-			<p style="color:red">Red Points: GO Train Stations</p>
-			<p style="color:orange">Orange Polygons: Airports</p>
-			<p style="color:purple">Purple Lines: Subway Lines from TTC</p>
-			<p style="color:pink">Pink Area: Toronto</p>
-		</div>
+			<!-- My legend of the web map-->
+			<br><br>
+			<div align=left>
+				<p>This map below shows the different forms of transportation around Toronto. Here's a legend of what
+					each
+					feature shows:</p>
+				<br>
+				<p style="color:red">Red Points: GO Train Stations</p>
+				<p style="color:orange">Orange Polygons: Airports</p>
+				<p style="color:purple">Purple Lines: Subway Lines from TTC</p>
+				<p style="color:pink">Pink Area: Toronto</p>
+			</div>
 
-		<!-- Move the map here -->
-		<div id="my-map" class="map-container"></div>
+			<!-- Move the map here -->
+			<div id="my-map" class="map-container"></div>
 
-		<!-- Load the mapbox-gl-geocoder plugin -->
-		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
-		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.css" type="text/css">
-		
-		<script src="script.js"></script>
-	
-		<button id="toggle-subway">Toggle Subway Lines</button>
+			<!-- Load the mapbox-gl-geocoder plugin -->
+			<script
+				src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
+			<link rel="stylesheet"
+				href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.css"
+				type="text/css">
 
-    <br>
+			<script src="script.js"></script>
+
+			<button id="toggle-subway">Toggle Subway Lines</button>
+
 			<p>Was this map helpful?</p>
+
+		</div>
 
 </body>
 
