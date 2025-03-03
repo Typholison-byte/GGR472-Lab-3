@@ -1,25 +1,57 @@
 .map-container {
     position: relative;
     width: 100%;
-    height: 500px; /* Set a fixed height */
-    margin-top: 20px; /* Push the map further down */
+    height: 500px;
+    /* Set a fixed height */
+    margin-top: 20px;
+    /* Push the map further down */
 }
 
 h1 {
     color: turquoise;
 }
 
-h2
-{
+h2 {
     color: purple;
 }
 
-
+/* Styling body */
 body {
     background-color: black;
-    color: green; /* Default text color */
+    font-family: Arial, sans-serif;
+    color: green;
+    margin: 0;
+    padding: 0;
+
 }
 
+/* Legend Styling */
+.legend p {
+    font-size: 16px;
+}
+
+
+/* Color-coded text */
+.green-text {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.purple-text {
+    color: purple;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blue-text {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Size of Map */
 #my-map {
     width: 100%;
     height: 500px;
@@ -27,14 +59,14 @@ body {
     border: 2px solid #fff;
     border-radius: 10px;
     overflow: hidden;
-} 
+}
 
 /* Style the toggle button */
 #toggle-subway {
     position: absolute;
-    top: 1200px;
+    top: 1180px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(46, 202, 40, 0.8);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -43,7 +75,18 @@ body {
 }
 
 #toggle-subway:hover {
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(10, 175, 15, 0.8);
 }
 
+/* Navbar */
+.navbar {
+    background-color: #333 !important;
+}
 
+.navbar-brand,
+.nav-link {
+    color: orange;
+    font-size: 22px; /* Bigger brand text */
+    font-weight: bold;
+    padding: 10px 15px;
+}

@@ -39,14 +39,14 @@ map.on('load', () => {
     map.on('click', 'GO-Stations-layer', (e) => {
         new mapboxgl.Popup()
             .setLngLat(e.lngLat)
-            .setHTML(`<b>Station:</b> ${e.features[0].properties.name}`)
+            .setHTML(`<b>GO-Station:</b> ${e.features[0].properties.name}`)
             .addTo(map);
     });
 
     // Add a data source from a GeoJSON file
     map.addSource('GGR472_Subway_Lines', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/Typholison-byte/GGR472-Lab-2-Attempt--2/refs/heads/main/Data/GGR472_Subway_Lines.geojson' // Your URL to your buildings.geojson file 
+        data: 'https://raw.githubusercontent.com/Typholison-byte/GGR472-Lab-3/refs/heads/main/Data/GGR472_Subway_Lines.geojson' // Your URL to your buildings.geojson file 
     });
 
     // Adding layer for subway lines
@@ -83,7 +83,7 @@ map.on('load', () => {
     // Add a data source from a GeoJSON file
     map.addSource('Airports', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/Typholison-byte/GGR472-Lab-2-Attempt--2/refs/heads/main/Data/airports.geojson' // URL to your airports.geojson file 
+        data: 'https://raw.githubusercontent.com/Typholison-byte/GGR472-Lab-3/refs/heads/main/Data/airports.geojson' // URL to your airports.geojson file 
     });
 
     // Adding layer for airports
