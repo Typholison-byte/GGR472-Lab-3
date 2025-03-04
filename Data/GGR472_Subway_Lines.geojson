@@ -4,7 +4,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Yonge-University Subway Line",
+                "name": "Line 1: Yonge-University Subway Line (Yonge Side)",
                 "stroke": "#f2ea02",
                 "stroke-width": 5,
                 "stroke-opacity": 1
@@ -39,7 +39,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Bloor-Danforth Subway Line",
+                "name": "Line 2: Bloor-Danforth Subway Line",
                 "stroke": "#08c40b",
                 "stroke-width": 5,
                 "stroke-opacity": 1
@@ -90,6 +90,7 @@
         {
             "type": "Feature",
             "properties": {
+                "name": "Line 4: Sheppard Subway Line",
                 "stroke": "#a20acd",
                 "stroke-width": 5,
                 "stroke-opacity": 1
@@ -116,6 +117,7 @@
         {
             "type": "Feature",
             "properties": {
+                "name": "Line 1: Yonge-University Subway Line (University Side)",
                 "stroke": "#f2ea02",
                 "stroke-width": 4,
                 "stroke-opacity": 1
