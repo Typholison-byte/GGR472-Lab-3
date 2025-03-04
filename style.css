@@ -113,8 +113,8 @@ body {
 /* Style the toggle button */
 #toggle-subway {
     position: absolute;
-    top: 110px;
-    left: 10px;
+    top: 40px;
+    left: 300px;
     background-color: teal;
     border: none;
     padding: 10px 15px;
