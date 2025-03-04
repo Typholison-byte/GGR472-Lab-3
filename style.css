@@ -15,41 +15,17 @@ h2 {
     color: purple;
 }
 
-/* Styling body */
+/* Styling body text */
 body {
     background-color: black;
     font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
     color: green;
-    margin: 0;
+    margin: 10px;
     padding: 0;
 
 }
-
-/* Legend Styling */
-.legend p {
-    font-size: 16px;
-}
-
-
-/* Color-coded text */
-.green-text {
-    color: green;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.purple-text {
-    color: purple;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.blue-text {
-    color: blue;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 
 /* Size of Map */
 #my-map {
@@ -64,9 +40,9 @@ body {
 /* Style the toggle button */
 #toggle-subway {
     position: absolute;
-    top: 1180px;
-    left: 20px;
-    background-color: rgba(46, 202, 40, 0.8);
+    top: 780px;
+    left: 15px;
+    background-color: teal;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -74,19 +50,16 @@ body {
     border-radius: 5px;
 }
 
-#toggle-subway:hover {
-    background-color: rgba(10, 175, 15, 0.8);
-}
-
 /* Navbar */
 .navbar {
-    background-color: #333 !important;
+    background-color: rgba(0, 128, 0, 0.23) !important;
 }
 
+/* Styling navbar */
 .navbar-brand,
 .nav-link {
     color: orange;
-    font-size: 22px; /* Bigger brand text */
+    font-size: 22px; 
     font-weight: bold;
     padding: 10px 15px;
 }
