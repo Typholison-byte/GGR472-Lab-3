@@ -7,13 +7,37 @@ const map = new mapboxgl.Map({
     zoom: 9, // starting zoom level
 });
 
+// Add search control to map overlay
+// Requires plugin as source in HTML
+// map.addControl(
+//     new MapboxGeocoder({
+//         accessToken: mapboxgl.accessToken,
+//         mapboxgl: mapboxgl,
+//         countries: "ca" // Limit to Canada only
+//     })
+// );
+
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
+
 // Add geolocate control to the map.
 map.addControl(new mapboxgl.GeolocateControl({
     positionOptions: { enableHighAccuracy: true }, // uses the most accuarate location available form user's device
     trackUserLocation: true //Shows users location on map (with permission from user)
 }));
+
+// Add fullscreen option to the map
+map.addControl(new mapboxgl.FullscreenControl());
+
+// Create geocoder as a variable (and remove previous geocoder)
+const geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl,
+    countries: "ca" 
+});
+
+// // Append geocoder variable to goeocoder HTML div to position on page
+document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
 map.on('load', () => {
     // Add a data source from a GeoJSON file 

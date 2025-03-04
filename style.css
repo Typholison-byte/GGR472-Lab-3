@@ -7,6 +7,33 @@
     /* Push the map further down */
 }
 
+.map-search-container {
+    position: absolute;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    top: 800px;
+    left: 0;
+    margin: 0 0 0 20px; /*top margin, right margin, bottom margin, left margin*/
+    padding: 10px; /*around elements inside of overlay*/
+    border-radius: 8px;
+    overflow: visible;
+}
+
+/* Size of Map */
+#my-map {
+    width: 100%;
+    height: 500px;
+    margin: 50px auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.geocoder {
+    position: relative;
+    margin: 10px 0;
+}
+
 h1 {
     color: turquoise;
 }
@@ -27,27 +54,37 @@ body {
 
 }
 
-/* Size of Map */
-#my-map {
-    width: 100%;
-    height: 500px;
-    margin: 50px auto;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    overflow: hidden;
+/* Styling Legend */
+.legend {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 1070px;
+    right: 5px;
+    margin: 10px 10px 10px 0; /*top margin, right margin, bottom margin, left margin*/
+    padding: 8px;
+    border-radius: 2px;
+    max-width: 140px;
 }
 
-/* Style the toggle button */
-#toggle-subway {
-    position: absolute;
-    top: 780px;
-    left: 15px;
-    background-color: teal;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
+.legend span {
+    display: inline-block;
+    border-radius: 50%; /*curve border to make a circle*/
+    height: 10px; /*size of circle*/
+    width: 10px;
+    margin-right: 5px; /*position of circle*/
+}
+
+/* Add colour to each child div in legend */
+.legend div:nth-child(2) span {
+    background-color: green;
+}
+
+.legend div:nth-child(3) span {
+    background-color: turquoise;
+}
+
+.legend div:nth-child(4) span {
+    background-color: purple;
 }
 
 /* Navbar */
@@ -62,4 +99,17 @@ body {
     font-size: 22px; 
     font-weight: bold;
     padding: 10px 15px;
+}
+
+/* Style the toggle button */
+#toggle-subway {
+    position: absolute;
+    top: 1180px;
+    left: 25px;
+    background-color: teal;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
 }
