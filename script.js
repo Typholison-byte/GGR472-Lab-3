@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibGFrZWVyaWUiLCJhIjoiY201cG5nbmptMDM0eDJxb215Y
 const map = new mapboxgl.Map({
     container: 'my-map', // map container ID 
     style: 'mapbox://styles/mapbox/streets-v12', // style URL 
-    center: [-79.1, 43.73], // starting position [lng, lat] 
+    center: [-79.5, 43.73], // starting position [lng, lat] 
     zoom: 9, // starting zoom level
 });
 
@@ -33,7 +33,7 @@ map.addControl(new mapboxgl.FullscreenControl());
 const geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxgl,
-    countries: "ca" 
+    countries: "ca"
 });
 
 // // Append geocoder variable to goeocoder HTML div to position on page
