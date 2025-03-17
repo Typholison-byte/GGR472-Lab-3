@@ -131,3 +131,144 @@ map.on('load', () => {
     });
 
 });
+
+/*--------------------------------------------------------------------
+CREATE LEGEND IN JAVASCRIPT
+--------------------------------------------------------------------*/
+//Declare array variables for labels and colours
+const legendlabels = [
+    'GO Stations',
+    'Subway Lines',
+    'Airports',
+];
+
+const legendcolours = [
+    'green',
+    'blue',
+    'purple',
+];
+
+//Declare legend variable 
+const legend = document.getElementById('popn-legend');
+
+const layers = [
+    { id: 'GO-Stations-layer', name: 'GO Stations', color: 'green' },
+    { id: 'Subway-Lines-layer', name: 'Subway Lines', color: 'blue' },
+    { id: 'Airports-layer', name: 'Airports', color: 'purple' }
+];
+
+layers.forEach(layer => {
+    const button = document.createElement('button');
+    button.innerHTML = layer.name;
+    button.style.backgroundColor = layer.color;
+    button.style.color = 'white';
+    button.style.margin = '5px';
+    button.style.border = 'none';
+    button.style.padding = '5px 10px';
+    button.style.cursor = 'pointer';
+
+    let visible = true;
+    button.addEventListener('click', () => {
+        visible = !visible;
+        map.setLayoutProperty(layer.id, 'visibility', visible ? 'visible' : 'none');
+        button.style.opacity = visible ? '1' : '0.5';
+    });
+
+    legend.appendChild(button);
+});
+
+// Toggle legend visibility
+document.getElementById('legendcheck').addEventListener('change', (e) => {
+    legend.style.display = e.target.checked ? 'block' : 'none';
+});
+
+// Dropdown filter to show specific transportation type
+document.getElementById("boundary").addEventListener('change', (e) => {
+    const selectedValue = e.target.value;
+
+    map.setLayoutProperty('GO-Stations-layer', 'visibility', selectedValue === 'Ontario' ? 'visible' : 'none');
+    map.setLayoutProperty('Subway-Lines-layer', 'visibility', selectedValue === 'Quebec' ? 'visible' : 'none');
+    map.setLayoutProperty('Airports-layer', 'visibility', selectedValue === 'Yukon' ? 'visible' : 'none');
+});
+
+//For each layer create a block to put the colour and label in
+legendlabels.forEach((label, i) => {
+    const colour = legendcolours[i];
+
+    const item = document.createElement('div'); //each layer gets a 'row' - this isn't in the legend yet, we do this later
+    const key = document.createElement('span'); //add a 'key' to the row. A key will be the colour circle
+
+    key.className = 'legend-key'; //the key will take on the shape and style properties defined in css
+    key.style.backgroundColor = colour; // the background color is retreived from teh layers array
+
+    const value = document.createElement('span'); //add a value variable to the 'row' in the legend
+    value.innerHTML = `${label}`; //give the value variable text based on the label
+
+    item.appendChild(key); //add the key (colour cirlce) to the legend row
+    item.appendChild(value); //add the value to the legend row
+
+    legend.appendChild(item); //add row to the legend
+});
+
+
+// /*--------------------------------------------------------------------
+// ADD INTERACTIVITY BASED ON HTML EVENT
+// --------------------------------------------------------------------*/
+
+// // 1) Add event listener which returns map view to full screen on button click using flyTo method
+// document.getElementById('returnbutton').addEventListener('click', () => {
+//     map.flyTo({
+//         center: [-79.5, 43.73],
+//         zoom: 3,
+//         essential: true
+//     });
+// });
+
+
+// // 2) Change display of legend based on check box
+// let legendcheck = document.getElementById('legendcheck');
+
+// legendcheck.addEventListener('click', () => {
+//     if (legendcheck.checked) {
+//         legendcheck.checked = true;
+//         legend.style.display = 'block';
+//     }
+//     else {
+//         legend.style.display = "none";
+//         legendcheck.checked = false;
+//     }
+// });
+
+
+// // 3) Change map layer display based on check box using setLayoutProperty method
+// document.getElementById('layercheck').addEventListener('change', (e) => {
+//     map.setLayoutProperty(
+//         'provterr-fill',
+//         'visibility',
+//         e.target.checked ? 'visible' : 'none'
+//     );
+// });
+
+
+// // 4) Filter data layer to show selected Province from dropdown selection
+// let boundaryvalue;
+
+// document.getElementById("boundaryfieldset").addEventListener('change', (e) => {
+//     boundaryvalue = document.getElementById('boundary').value;
+
+//     //console.log(boundaryvalue); // Useful for testing whether correct values are returned from dropdown selection
+
+//     if (boundaryvalue == 'All') {
+//         map.setFilter(
+//             'provterr-fill',
+//             ['has', 'PRENAME'] // Returns all polygons from layer that have a value in PRENAME field
+//         );
+//     } else {
+//         map.setFilter(
+//             'provterr-fill',
+//             ['==', ['get', 'PRENAME'], boundaryvalue] // returns polygon with PRENAME value that matches dropdown selection
+//         );
+//     }
+
+// });
+
